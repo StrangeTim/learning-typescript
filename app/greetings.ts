@@ -1,3 +1,4 @@
+/* old way
 class Greeter {
   greeting: string;
 
@@ -7,6 +8,14 @@ class Greeter {
 
   greet() {
     return "Hello, " + this.greeting;
+  }
+}
+*/
+
+class Greeter {
+  constructor (public message: string) {}
+  greet() {
+    return "Hello, " + this.message;
   }
 }
 
